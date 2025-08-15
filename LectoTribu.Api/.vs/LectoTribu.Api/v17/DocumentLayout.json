@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\services\\clubsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\services\\iclubsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -27,11 +33,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClubsApi.cs",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Services\\ClubsApi.cs",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Services\\ClubsApi.cs",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Services\\ClubsApi.cs",
+              "RelativeToolTip": "..\\LectoTribu.Web\\Services\\ClubsApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T19:17:39.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClubsApi.cs",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Services\\IClubsApi.cs",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Services\\IClubsApi.cs",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Services\\IClubsApi.cs",
+              "RelativeToolTip": "..\\LectoTribu.Web\\Services\\IClubsApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T19:16:55.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\appsettings.json",
               "RelativeDocumentMoniker": "..\\LectoTribu.Web\\appsettings.json",
@@ -44,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Program.cs",
               "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Program.cs",
@@ -52,12 +88,11 @@
               "RelativeToolTip": "..\\LectoTribu.Web\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:20:10.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T18:20:10.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ClubsController.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\Controllers\\ClubsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClubsController.cs",
@@ -65,12 +100,11 @@
               "RelativeToolTip": "Controllers\\ClubsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:16:38.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T18:16:38.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -78,16 +112,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:14:56.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-08-15T18:14:56.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "InMemoryBus.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Messaging\\InMemoryBus.cs",
               "RelativeDocumentMoniker": "..\\LectoTribu.Infrastructure\\Messaging\\InMemoryBus.cs",
@@ -95,8 +124,7 @@
               "RelativeToolTip": "..\\LectoTribu.Infrastructure\\Messaging\\InMemoryBus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:11:17.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T18:11:17.572Z"
             }
           ]
         }
