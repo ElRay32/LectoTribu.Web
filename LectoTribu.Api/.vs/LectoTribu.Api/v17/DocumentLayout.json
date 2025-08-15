@@ -1,17 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A56D8741-4C4A-4FA4-88B6-FFEA42A34096}|..\\LectoTribu.Application\\LectoTribu.Application.csproj|c:\\dev\\lectotribu.web\\lectotribu.application\\dtos\\clubdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A56D8741-4C4A-4FA4-88B6-FFEA42A34096}|..\\LectoTribu.Application\\LectoTribu.Application.csproj|c:\\dev\\lectotribu.web\\lectotribu.application\\interfaces\\iclubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A56D8741-4C4A-4FA4-88B6-FFEA42A34096}|..\\LectoTribu.Application\\LectoTribu.Application.csproj|c:\\dev\\lectotribu.web\\lectotribu.application\\services\\clubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -19,49 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClubDtos.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\DTOs\\ClubDtos.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Application\\DTOs\\ClubDtos.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\DTOs\\ClubDtos.cs",
-              "RelativeToolTip": "..\\LectoTribu.Application\\DTOs\\ClubDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:32:38.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IClubService.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Interfaces\\IClubService.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Application\\Interfaces\\IClubService.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Interfaces\\IClubService.cs",
-              "RelativeToolTip": "..\\LectoTribu.Application\\Interfaces\\IClubService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:29:13.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClubService.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Services\\ClubService.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Application\\Services\\ClubService.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Services\\ClubService.cs",
-              "RelativeToolTip": "..\\LectoTribu.Application\\Services\\ClubService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAswFYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:26:56.212Z"
             }
           ]
         }
