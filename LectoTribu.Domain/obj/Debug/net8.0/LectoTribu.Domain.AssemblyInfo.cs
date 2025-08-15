@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LectoTribu.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45176918bcf2f964726bf15d1f67f5642d277011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89d3953fcd24b00930995cf329dd9fd6270d08b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("LectoTribu.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LectoTribu.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
