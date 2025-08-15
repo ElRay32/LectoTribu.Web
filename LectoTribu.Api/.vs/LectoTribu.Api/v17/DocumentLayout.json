@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A56D8741-4C4A-4FA4-88B6-FFEA42A34096}|..\\LectoTribu.Application\\LectoTribu.Application.csproj|c:\\dev\\lectotribu.web\\lectotribu.application\\interfaces\\iclubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A56D8741-4C4A-4FA4-88B6-FFEA42A34096}|..\\LectoTribu.Application\\LectoTribu.Application.csproj|c:\\dev\\lectotribu.web\\lectotribu.application\\services\\clubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,6 +25,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IClubService.cs",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Interfaces\\IClubService.cs",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Application\\Interfaces\\IClubService.cs",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Interfaces\\IClubService.cs",
+              "RelativeToolTip": "..\\LectoTribu.Application\\Interfaces\\IClubService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T14:29:13.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ClubService.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Application\\Services\\ClubService.cs",
               "RelativeDocumentMoniker": "..\\LectoTribu.Application\\Services\\ClubService.cs",
