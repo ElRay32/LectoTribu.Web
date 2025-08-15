@@ -1,0 +1,18 @@
+﻿@page
+@model CommentModel
+@{
+    ViewData["Title"] = "Comentar capítulo";
+}
+<h2>Comentar capítulo</h2>
+<form method="post">
+    <div><label>ClubId</label> <input asp-for="Input.ClubId" /></div>
+    <div><label>BookId</label> <input asp-for="Input.BookId" /></div>
+    <div><label>Capítulo</label> <input asp-for="Input.Chapter" type="number" /></div>
+    <div><label>UserId</label> <input asp-for="Input.UserId" /></div>
+    <div><label>Comentario</label> <textarea asp-for="Input.Content"></textarea></div>
+    <button type="submit">Publicar</button>
+</form>
+@if (Model.Sent)
+{
+    <p>Comentario enviado.</p>
+}
