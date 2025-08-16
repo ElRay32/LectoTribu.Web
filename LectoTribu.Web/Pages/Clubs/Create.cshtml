@@ -1,26 +1,42 @@
 ﻿@page
 @model CreateModel
 @{
-    ViewData["Title"] = "Crear Club";
+    ViewData["Title"] = "Crear club";
 }
-<h2>Crear Club</h2>
-<form method="post">
-    <div>
-        <label>Nombre</label>
-        <input asp-for="Input.Name" />
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-semibold">Nuevo club</div>
+            <div class="card-body">
+                <form method="post" class="row g-3">
+                    <div class="col-12">
+                        <label class="form-label">Nombre</label>
+                        <input class="form-control" asp-for="Input.Name" />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Descripción</label>
+                        <input class="form-control" asp-for="Input.Description" />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">OwnerId (GUID)</label>
+                        <input class="form-control" asp-for="Input.OwnerId" />
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Crear</button>
+                    </div>
+                </form>
+            </div>
+            @if (Model.CreatedClubId != Guid.Empty)
+            {
+                <div class="card-footer bg-white">
+                    <div class="alert alert-success mb-0">
+                        Club creado: <strong>@Model.CreatedClubId</strong>
+                        <div class="mt-2 small">
+                            Ir a <a asp-page="/Read/Index" asp-route-ClubId="@Model.CreatedClubId" asp-route-BookId="00000000-0000-0000-0000-000000000000" asp-route-Chapter="1">Sala de lectura</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
-    <div>
-        <label>Descripción</label>
-        <input asp-for="Input.Description" />
-    </div>
-    <div>
-        <label>OwnerId (GUID)</label>
-        <input asp-for="Input.OwnerId" />
-    </div>
-    <button type="submit">Crear</button>
-</form>
-@if (Model.CreatedClubId != Guid.Empty)
-{
-    <p>Club creado: <strong>@Model.CreatedClubId</strong></p>
-    <p><a asp-page="/Clubs/Schedule">Programar capítulo</a> | <a asp-page="/Clubs/Comment">Comentar capítulo</a></p>
-}
+</div>

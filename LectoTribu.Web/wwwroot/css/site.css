@@ -1,22 +1,41 @@
-html {
-  font-size: 14px;
+:root {
+    --reading-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.reading-shell {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1.25rem;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+@media (max-width: 992px) {
+    .reading-shell {
+        grid-template-columns: 1fr;
+    }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.reader-card {
+    line-height: 1.8;
+    font-family: var(--reading-font);
+    font-size: 1.1rem;
 }
 
-body {
-  margin-bottom: 60px;
+    .reader-card p {
+        margin-bottom: 1rem;
+    }
+
+.sticky-col {
+    position: sticky;
+    top: 1rem;
+    height: calc(100dvh - 2rem);
+    overflow: auto;
+}
+
+.comment-item {
+    border-left: 3px solid #0d6efd;
+    padding-left: .75rem;
+}
+
+.form-floating > textarea {
+    height: 120px;
 }

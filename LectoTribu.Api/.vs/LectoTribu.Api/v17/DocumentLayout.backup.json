@@ -3,23 +3,10 @@
   "WorkspaceRootPath": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73F58C3B-48B9-4FD8-AA4A-6A0F46C0CEA0}|LectoTribu.Api.csproj|c:\\dev\\lectotribu.web\\lectotribu.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{73F58C3B-48B9-4FD8-AA4A-6A0F46C0CEA0}|LectoTribu.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B81091-CA5F-41BB-A04F-D90DD41BBB35}|..\\LectoTribu.Infrastructure\\LectoTribu.Infrastructure.csproj|c:\\dev\\lectotribu.web\\lectotribu.infrastructure\\migrations\\20250815224847_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B81091-CA5F-41BB-A04F-D90DD41BBB35}|..\\LectoTribu.Infrastructure\\LectoTribu.Infrastructure.csproj|c:\\dev\\lectotribu.web\\lectotribu.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77E0895C-19DA-40E5-8DD0-3826B6AAEBDF}|..\\LectoTribu.Domain\\LectoTribu.Domain.csproj|c:\\dev\\lectotribu.web\\lectotribu.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77E0895C-19DA-40E5-8DD0-3826B6AAEBDF}|..\\LectoTribu.Domain\\LectoTribu.Domain.csproj|c:\\dev\\lectotribu.web\\lectotribu.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77E0895C-19DA-40E5-8DD0-3826B6AAEBDF}|..\\LectoTribu.Domain\\LectoTribu.Domain.csproj|c:\\dev\\lectotribu.web\\lectotribu.domain\\abstractions\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +21,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\appsettings.Development.json",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\appsettings.Development.json",
+              "RelativeToolTip": "..\\LectoTribu.Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-15T23:20:45.011Z",
+              "WhenOpened": "2025-08-16T15:05:13.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\appsettings.json",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\appsettings.json",
+              "RelativeToolTip": "..\\LectoTribu.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-16T15:00:57.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250815224847_Initial.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Migrations\\20250815224847_Initial.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Infrastructure\\Migrations\\20250815224847_Initial.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Migrations\\20250815224847_Initial.cs",
-              "RelativeToolTip": "..\\LectoTribu.Infrastructure\\Migrations\\20250815224847_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T22:48:49.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "..\\LectoTribu.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T22:21:19.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Entities\\Review.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Domain\\Entities\\Review.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Entities\\Review.cs",
-              "RelativeToolTip": "..\\LectoTribu.Domain\\Entities\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T22:20:26.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Abstractions\\Post.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Domain\\Abstractions\\Post.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Domain\\Abstractions\\Post.cs",
-              "RelativeToolTip": "..\\LectoTribu.Domain\\Abstractions\\Post.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T22:19:38.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
-              "RelativeToolTip": "..\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwBcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T20:44:16.051Z",
-              "EditorCaption": ""
             }
           ]
         }

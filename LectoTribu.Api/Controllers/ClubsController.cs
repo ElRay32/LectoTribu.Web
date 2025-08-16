@@ -1,6 +1,10 @@
 ﻿using LectoTribu.Application.DTOs;
 using LectoTribu.Application.Interfaces;
+using LectoTribu.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
+using LectoTribu.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace LectoTribu.Api.Controllers;
 
@@ -62,4 +66,20 @@ public class ClubsController : ControllerBase
         await _service.CommentAsync(dto with { ClubId = id }, ct);
         return NoContent();
     }
+
+public record CommentDtoOut(Guid Id, Guid UserId, string Content, DateTime CreatedAtUtc);
+
+[HttpGet("{id}/comments")]
+public async Task<ActionResult<IEnumerable<CommentDtoOut>>> GetComments(
+    Guid id, [FromQuery] Guid bookId, [FromQuery] int chapter, [FromServices] AppDbContext db,
+    CancellationToken ct)
+{
+    var query = db.Comments
+        .Where(c => c.ClubId == id && c.BookId == bookId && c.ChapterNumber == chapter)
+        .OrderBy(c => c.CreatedAtUtc)
+        .Select(c => new CommentDtoOut(c.Id, c.UserId, c.Content, c.CreatedAtUtc));
+
+    var list = await query.ToListAsync(ct);
+    return Ok(list);
+}
 }

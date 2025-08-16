@@ -1,8 +1,19 @@
-﻿namespace LectoTribu.Web.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-public interface IClubsApi
+namespace LectoTribu.Web.Services
 {
-    Task<Guid> CreateClubAsync(string name, Guid ownerId, string? description);
-    Task ScheduleOneAsync(Guid clubId, Guid bookId, int chapter, DateOnly date);
-    Task CommentAsync(Guid clubId, Guid bookId, int chapter, Guid userId, string content);
+   
+    public record CommentVm(Guid Id, Guid UserId, string Content, DateTime CreatedAtUtc);
+
+    public interface IClubsApi
+    {
+        Task<Guid> CreateClubAsync(string name, Guid ownerId, string? description);
+        Task ScheduleOneAsync(Guid clubId, Guid bookId, int chapter, DateOnly date);
+        Task CommentAsync(Guid clubId, Guid bookId, int chapter, Guid userId, string content);
+
+        
+        Task<List<CommentVm>> GetCommentsAsync(Guid clubId, Guid bookId, int chapter);
+    }
 }

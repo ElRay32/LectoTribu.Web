@@ -1,0 +1,81 @@
+﻿@page
+@model ReadModel
+@{
+    ViewData["Title"] = "Sala de lectura";
+}
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <div>
+        <h1 class="h3 mb-0">@Model.HeaderTitle</h1>
+        <small class="text-muted">Club: @Model.ClubId • Libro: @Model.BookId • Capítulo: @Model.Chapter</small>
+    </div>
+    <div>
+        <a class="btn btn-outline-primary" asp-page="/Clubs/Schedule">Programar</a>
+    </div>
+</div>
+
+<div class="reading-shell">
+    <!-- Lado de lectura -->
+    <section>
+        <div class="card shadow-sm reader-card">
+            <div class="card-body">
+                <h2 class="h5">@Model.ChapterTitle</h2>
+                <p>
+                    @Model.ChapterText
+                </p>
+                <p>
+                    @Model.ChapterText
+                </p>
+                <p>
+                    @Model.ChapterText
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comentarios -->
+    <aside class="sticky-col">
+        <div class="card shadow-sm mb-3">
+            <div class="card-header bg-white fw-semibold">Comentarios (@Model.Comments.Count)</div>
+            <div class="list-group list-group-flush">
+                @if (Model.Comments.Count == 0)
+                {
+                    <div class="p-3 text-muted">Aún no hay comentarios. ¡Sé el primero!</div>
+                }
+                else
+                {
+                    @foreach (var c in Model.Comments)
+                    {
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between mb-1">
+                                <strong>@c.UserId.ToString().Substring(0, 8)</strong>
+                                <small class="text-muted">@c.CreatedAtUtc.ToLocalTime().ToString("g")</small>
+                            </div>
+                            <div class="comment-item">@c.Content</div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-semibold">Añadir comentario</div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="Input.ClubId" />
+                    <input type="hidden" asp-for="Input.BookId" />
+                    <input type="hidden" asp-for="Input.Chapter" />
+                    <div class="mb-2">
+                        <label class="form-label">Tu usuario (GUID)</label>
+                        <input class="form-control" asp-for="Input.UserId" />
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Escribe tu comentario..." asp-for="Input.Content"></textarea>
+                        <label for="Input_Content">Escribe tu comentario…</label>
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Publicar</button>
+                </form>
+            </div>
+        </div>
+    </aside>
+</div>

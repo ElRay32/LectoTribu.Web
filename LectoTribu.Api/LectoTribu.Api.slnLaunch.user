@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "LectoTribu.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\LectoTribu.Web\\LectoTribu.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

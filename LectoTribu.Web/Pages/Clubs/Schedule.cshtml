@@ -3,15 +3,39 @@
 @{
     ViewData["Title"] = "Programar capítulo";
 }
-<h2>Programar capítulo (uno)</h2>
-<form method="post">
-    <div><label>ClubId</label> <input asp-for="Input.ClubId" /></div>
-    <div><label>BookId</label> <input asp-for="Input.BookId" /></div>
-    <div><label>Capítulo</label> <input asp-for="Input.Chapter" type="number" /></div>
-    <div><label>Fecha</label> <input asp-for="Input.Date" type="date" /></div>
-    <button type="submit">Guardar</button>
-</form>
-@if (Model.Saved)
-{
-    <p>Programación creada.</p>
-}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-semibold">Programar un capítulo</div>
+            <div class="card-body">
+                <form method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">ClubId</label>
+                        <input class="form-control" asp-for="Input.ClubId" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">BookId</label>
+                        <input class="form-control" asp-for="Input.BookId" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Capítulo</label>
+                        <input class="form-control" asp-for="Input.Chapter" type="number" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Fecha</label>
+                        <input class="form-control" asp-for="Input.Date" type="date" />
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                    </div>
+                </form>
+            </div>
+            @if (Model.Saved)
+            {
+                <div class="card-footer bg-white">
+                    <div class="alert alert-success mb-0">Programación creada.</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
