@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LectoTribu.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a4309b172455c3925ed91b24bf5232a11f2ff4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb6bb47b56cf6ef794551a3a1d6327e365a32f58")]
 [assembly: System.Reflection.AssemblyProductAttribute("LectoTribu.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LectoTribu.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

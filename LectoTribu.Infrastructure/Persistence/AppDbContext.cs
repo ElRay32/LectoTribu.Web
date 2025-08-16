@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using LectoTribu.Domain.Entities;
 using LectoTribu.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
+using LectoTribu.Domain.Abstractions;
 
 namespace LectoTribu.Infrastructure.Persistence;
 
-public class AppDbContext : DbContext
+public class AppDbContext : DbContext, IUnitOfWork
 {
+    public new Task<int> SaveChangesAsync(CancellationToken ct = default)
+        => base.SaveChangesAsync(ct);
     public DbSet<User> Users => Set<User>();
     public DbSet<Author> Authors => Set<Author>();
     public DbSet<Book> Books => Set<Book>();
@@ -35,17 +38,15 @@ public class AppDbContext : DbContext
             });
         });
 
-        modelBuilder.Entity<Book>(b =>
+        modelBuilder.Entity<Review>(b =>
         {
-            b.Property(x => x.Title).HasMaxLength(300).IsRequired();
+            b.OwnsOne(r => r.Rating, r =>
+            {
+                r.Property(p => p.Value).HasColumnName("Rating").IsRequired();
+            });
         });
 
-        modelBuilder.Entity<Club>(b =>
-        {
-            b.Property(x => x.Name).HasMaxLength(200).IsRequired();
-            b.Ignore(x => x.Books); // Si implementas many-to-many, crea una tabla intermedia ClubBook
-        });
-
+        // ... resto (Book, Club, etc.)
         base.OnModelCreating(modelBuilder);
     }
 }

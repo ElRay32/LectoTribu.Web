@@ -10,9 +10,11 @@ namespace LectoTribu.Domain.Entities;
 
 public class User : BaseEntity
 {
-    public string Name { get; private set; }
-    public Email Email { get; private set; }
+    public string Name { get; private set; } = null!;
+    public Email Email { get; private set; } = null!;
     public string? Bio { get; private set; }
+
+    private User() { } // <--- EF
 
     public User(string name, Email email, string? bio = null)
     {

@@ -3,26 +3,14 @@
   "WorkspaceRootPath": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73F58C3B-48B9-4FD8-AA4A-6A0F46C0CEA0}|LectoTribu.Api.csproj|c:\\dev\\lectotribu.web\\lectotribu.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73F58C3B-48B9-4FD8-AA4A-6A0F46C0CEA0}|LectoTribu.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\comment.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\comment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\schedule.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\schedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2293B68F-B301-45D7-93F0-98D34FBEC0DC}|..\\LectoTribu.Web\\LectoTribu.Web.csproj|c:\\dev\\lectotribu.web\\lectotribu.web\\pages\\clubs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C6B81091-CA5F-41BB-A04F-D90DD41BBB35}|..\\LectoTribu.Infrastructure\\LectoTribu.Infrastructure.csproj|c:\\dev\\lectotribu.web\\lectotribu.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,19 +20,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T19:35:01.283Z",
+              "WhenOpened": "2025-08-16T02:05:29.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Program.cs",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Program.cs",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Program.cs",
+              "RelativeToolTip": "..\\LectoTribu.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T02:04:04.075Z",
               "EditorCaption": ""
             },
             {
@@ -53,80 +54,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Comment.cshtml.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml.cs",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T19:34:06.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Comment.cshtml",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Comment.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-15T19:33:33.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Schedule.cshtml.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml.cs",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wB8AAAABAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "..\\LectoTribu.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwBcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T19:32:48.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Schedule.cshtml",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Schedule.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-15T19:32:09.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml.cs",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml.cs",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T19:31:02.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml",
-              "RelativeDocumentMoniker": "..\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml",
-              "ToolTip": "C:\\Dev\\LectoTribu.Web\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml",
-              "RelativeToolTip": "..\\LectoTribu.Web\\Pages\\Clubs\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-15T19:29:52.687Z",
+              "WhenOpened": "2025-08-15T20:44:16.051Z",
               "EditorCaption": ""
             }
           ]

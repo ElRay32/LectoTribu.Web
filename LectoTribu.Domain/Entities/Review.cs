@@ -11,7 +11,9 @@ namespace LectoTribu.Domain.Entities;
 public class Review : Post
 {
     public Guid BookId { get; private set; }
-    public Rating Rating { get; private set; }
+    public Rating Rating { get; private set; } = null!; // EF la pobla
+
+    private Review() : base() { } // <--- para EF
 
     public Review(Guid userId, Guid bookId, Rating rating, string content)
         : base(userId, content)

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LectoTribu.Application/1.0.0": {
+        "dependencies": {
+          "LectoTribu.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LectoTribu.Application.dll": {}
+        }
+      },
+      "LectoTribu.Domain/1.0.0": {
+        "runtime": {
+          "LectoTribu.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LectoTribu.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LectoTribu.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

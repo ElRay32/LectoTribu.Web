@@ -1,0 +1,12 @@
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\bin\Debug\net8.0\LectoTribu.Domain.deps.json
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\bin\Debug\net8.0\LectoTribu.Domain.dll
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\bin\Debug\net8.0\LectoTribu.Domain.pdb
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.AssemblyInfoInputs.cache
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.AssemblyInfo.cs
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.sourcelink.json
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.dll
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\refint\LectoTribu.Domain.dll
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\LectoTribu.Domain.pdb
+C:\Dev\LectoTribu.Web\LectoTribu.Domain\obj\Debug\net8.0\ref\LectoTribu.Domain.dll

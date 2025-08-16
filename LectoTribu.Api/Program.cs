@@ -22,6 +22,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
+    p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -31,6 +34,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
+
+app.UseCors();
 
 // Seed de datos de prueba
 using (var scope = app.Services.CreateScope())
