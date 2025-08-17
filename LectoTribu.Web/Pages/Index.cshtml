@@ -1,10 +1,14 @@
 ﻿@page
-@model IndexModel
+@model LectoTribu.Web.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Bienvenido a LectoTribu";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center py-5">
+    <h1 class="display-6 mb-3">Bienvenido a <strong>LectoTribu</strong></h1>
+    <p class="lead">Crea clubes de lectura, programa capítulos, comenta y recomienda libros.</p>
+    <div class="mt-4">
+        <a class="btn btn-primary me-2" asp-page="/Clubs/Index">Ver Clubs</a>
+        <a class="btn btn-outline-primary" asp-page="/Books/Index">Ver Libros</a>
+    </div>
 </div>
+

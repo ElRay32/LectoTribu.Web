@@ -1,0 +1,26 @@
+﻿@page
+@model BooksIndexModel
+@{
+    ViewData["Title"] = "Libros";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4 mb-0">Libros</h1>
+    <a class="btn btn-primary" asp-page="/Books/Create">Nuevo</a>
+</div>
+<table class="table table-hover align-middle">
+    <thead><tr><th>Título</th><th style="width:160px"></th></tr></thead>
+    <tbody>
+        @foreach (var b in Model.Items)
+        {
+            <tr>
+                <td>@b.Title</td>
+                <td class="text-end">
+                    <a class="btn btn-sm btn-outline-secondary" asp-page="/Books/Edit" asp-route-id="@b.Id">Editar</a>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@b.Id" class="d-inline">
+                        <button class="btn btn-sm btn-outline-danger" type="submit" onclick="return confirm('¿Eliminar libro?');">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+﻿@page
+@model BookCreateModel
+@{
+    ViewData["Title"] = "Nuevo libro";
+}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card shadow-sm">
+      <div class="card-header bg-white fw-semibold">Nuevo libro</div>
+      <div class="card-body">
+        <form method="post" class="row g-3">
+          <div class="col-12"><label class="form-label">Título</label><input class="form-control" asp-for="Input.Title" /></div>
+          <div class="col-md-6"><label class="form-label">Autor</label><input class="form-control" asp-for="Input.AuthorName" /></div>
+          <div class="col-md-6"><label class="form-label">Capítulos</label><input class="form-control" asp-for="Input.TotalChapters" type="number" min="1" /></div>
+
+          <div class="col-md-6">
+            <label class="form-label">Tipo (formato)</label>
+            <select class="form-select" asp-for="Input.Format">
+              <option value="0">Hardcover</option>
+              <option value="1">Paperback</option>
+              <option value="2">Ebook</option>
+              <option value="3">Audiobook</option>
+            </select>
+          </div>
+          <div class="col-md-6"><label class="form-label">Género</label><input class="form-control" asp-for="Input.Genre" placeholder="Fantasía, Técnico, ..." /></div>
+          <div class="col-md-6"><label class="form-label">Idioma</label><input class="form-control" asp-for="Input.Language" placeholder="es, en, ..." /></div>
+          <div class="col-md-3"><label class="form-label">Año</label><input class="form-control" asp-for="Input.Year" type="number" /></div>
+          <div class="col-md-3"><label class="form-label">Páginas</label><input class="form-control" asp-for="Input.Pages" type="number" /></div>
+
+          <div class="col-12 d-grid"><button class="btn btn-primary" type="submit">Guardar</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

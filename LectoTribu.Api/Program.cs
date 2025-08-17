@@ -25,7 +25,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
     p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
+builder.Services.AddCors(o => o.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+
 var app = builder.Build();
+
+app.UseCors();
 
 if (app.Environment.IsDevelopment())
 {
@@ -47,7 +51,7 @@ using (var scope = app.Services.CreateScope())
     {
         var user = new User("Tokio", new Email("tokio@example.com"));
         var author = new Author("Autor Demo");
-        var book = new Book("Libro Demo", author.Id, totalChapters: 10, isbn: null);
+        var book = new Book("Libro Demo", author.Id, totalChapters: 10);
         await db.AddRangeAsync(user, author, book);
         await db.SaveChangesAsync();
         Console.WriteLine($"[SEED] UserId: {user.Id}\n[SEED] BookId: {book.Id}");

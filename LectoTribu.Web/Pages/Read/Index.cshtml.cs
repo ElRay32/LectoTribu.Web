@@ -1,7 +1,9 @@
 ﻿using LectoTribu.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using LectoTribu.Web.Services;
+using LectoTribu.Web.ViewModels;
+
+
 
 public class ReadModel : PageModel
 {
@@ -47,5 +49,22 @@ public class ReadModel : PageModel
         public int Chapter { get; set; }
         public string UserId { get; set; } = string.Empty;
         public string Content { get; set; } = string.Empty;
+    }
+    public class IndexModel : PageModel
+    {
+        private readonly IClubsApi _api;
+        public IndexModel(IClubsApi api) => _api = api;
+
+        public Guid ClubId { get; set; }
+        public Guid BookId { get; set; }
+        public int Chapter { get; set; }
+
+        public List<CommentVm> Comments { get; set; } = new();
+
+        public async Task OnGet(Guid clubId, Guid bookId, int chapter)
+        {
+            ClubId = clubId; BookId = bookId; Chapter = chapter;
+            Comments = await _api.GetCommentsAsync(ClubId, BookId, Chapter);
+        }
     }
 }

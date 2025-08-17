@@ -1,7 +1,7 @@
 ﻿@page
-@model CreateModel
+@model CreateClubModel
 @{
-    ViewData["Title"] = "Crear club";
+    ViewData["Title"] = "Nuevo club";
 }
 <div class="row justify-content-center">
     <div class="col-lg-8">
@@ -10,18 +10,22 @@
             <div class="card-body">
                 <form method="post" class="row g-3">
                     <div class="col-12">
-                        <label class="form-label">Nombre</label>
-                        <input class="form-control" asp-for="Input.Name" />
+                        <label class="form-label">Nombre del club</label>
+                        <input class="form-control" asp-for="Input.ClubName" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre del dueño</label>
+                        <input class="form-control" asp-for="Input.OwnerFirstName" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Apellido del dueño</label>
+                        <input class="form-control" asp-for="Input.OwnerLastName" />
                     </div>
                     <div class="col-12">
                         <label class="form-label">Descripción</label>
                         <input class="form-control" asp-for="Input.Description" />
                     </div>
-                    <div class="col-12">
-                        <label class="form-label">OwnerId (GUID)</label>
-                        <input class="form-control" asp-for="Input.OwnerId" />
-                    </div>
-                    <div class="col-12">
+                    <div class="col-12 d-grid">
                         <button class="btn btn-primary" type="submit">Crear</button>
                     </div>
                 </form>
@@ -29,12 +33,7 @@
             @if (Model.CreatedClubId != Guid.Empty)
             {
                 <div class="card-footer bg-white">
-                    <div class="alert alert-success mb-0">
-                        Club creado: <strong>@Model.CreatedClubId</strong>
-                        <div class="mt-2 small">
-                            Ir a <a asp-page="/Read/Index" asp-route-ClubId="@Model.CreatedClubId" asp-route-BookId="00000000-0000-0000-0000-000000000000" asp-route-Chapter="1">Sala de lectura</a>
-                        </div>
-                    </div>
+                    <div class="alert alert-success mb-0">Club creado: <b>@Model.CreatedClubId</b>. <a class="ms-2" asp-page="/Clubs/Index">Ver listado</a></div>
                 </div>
             }
         </div>

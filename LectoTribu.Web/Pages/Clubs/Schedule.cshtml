@@ -10,31 +10,31 @@
             <div class="card-body">
                 <form method="post" class="row g-3">
                     <div class="col-md-6">
-                        <label class="form-label">ClubId</label>
-                        <input class="form-control" asp-for="Input.ClubId" />
+                        <label class="form-label">Club</label>
+                        <select class="form-select" asp-for="Input.ClubId">
+                            @foreach (var c in Model.Clubs)
+                            {
+                                <option value="@c.Id">@c.Name</option>
+                            }
+                        </select>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">BookId</label>
-                        <input class="form-control" asp-for="Input.BookId" />
+                        <label class="form-label">Libro</label>
+                        <select class="form-select" asp-for="Input.BookId">
+                            @foreach (var b in Model.Books)
+                            {
+                                <option value="@b.Id">@b.Title</option>
+                            }
+                        </select>
                     </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Capítulo</label>
-                        <input class="form-control" asp-for="Input.Chapter" type="number" />
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Fecha</label>
-                        <input class="form-control" asp-for="Input.Date" type="date" />
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Guardar</button>
-                    </div>
+                    <div class="col-md-6"><label class="form-label">Capítulo</label><input class="form-control" asp-for="Input.Chapter" type="number" /></div>
+                    <div class="col-md-6"><label class="form-label">Fecha</label><input class="form-control" asp-for="Input.Date" type="date" /></div>
+                    <div class="col-12 d-grid"><button class="btn btn-primary" type="submit">Guardar</button></div>
                 </form>
             </div>
             @if (Model.Saved)
             {
-                <div class="card-footer bg-white">
-                    <div class="alert alert-success mb-0">Programación creada.</div>
-                </div>
+                <div class="card-footer bg-white"><div class="alert alert-success mb-0">Programación creada.</div></div>
             }
         </div>
     </div>

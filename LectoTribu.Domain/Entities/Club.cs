@@ -77,6 +77,13 @@ public class Club : BaseEntity
         }
         Touch();
     }
+    public void UpdateDetails(string name, string? description)
+    {
+        if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException("Nombre requerido", nameof(name));
+        Name = name.Trim();
+        Description = description;
+        Touch();
+    }
 }
 
 public enum ClubRole { Owner, Moderator, Member }
