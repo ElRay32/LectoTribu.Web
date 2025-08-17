@@ -1,3 +1,7 @@
+# Documentación: Contexto de Datos y Ciclo de Vida de Aplicación (LectoTribu)
+
+## Resumen ejecutivo
+- **Propósito:** Plataforma donde las personas pueden unirse a clubes de lectura, comentar capítulos, establecer cronogramas y recomendar libros mediante reseñas personales.
 
 # Documentación: Contexto de Datos y Ciclo de Vida de Aplicación (LectoTribu)
 
