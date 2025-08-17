@@ -1,13 +1,20 @@
-﻿using LectoTribu.Web.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using LectoTribu.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using LectoTribu.Web.Services;
-using static LectoTribu.Web.Services.ClubsApi;
 
 public class ScheduleModel : PageModel
 {
-    private readonly IClubsApi _clubsApi; private readonly IBooksApi _booksApi;
-    public ScheduleModel(IClubsApi clubsApi, IBooksApi booksApi) { _clubsApi = clubsApi; _booksApi = booksApi; }
+    private readonly IClubsApi _clubsApi;
+    private readonly IBooksApi _booksApi;
+
+    public ScheduleModel(IClubsApi clubsApi, IBooksApi booksApi)
+    {
+        _clubsApi = clubsApi;
+        _booksApi = booksApi;
+    }
 
     [BindProperty] public ScheduleInput Input { get; set; } = new();
     public bool Saved { get; set; }
@@ -18,18 +25,36 @@ public class ScheduleModel : PageModel
     {
         Clubs = await _clubsApi.GetAllAsync();
         Books = await _booksApi.GetAllAsync();
-        if (Clubs.Count > 0) Input.ClubId = Clubs[0].Id.ToString();
-        if (Books.Count > 0) Input.BookId = Books[0].Id.ToString();
     }
 
     public async Task<IActionResult> OnPostAsync()
     {
-        if (!Guid.TryParse(Input.ClubId, out var club) || !Guid.TryParse(Input.BookId, out var book))
-        { ModelState.AddModelError(string.Empty, "Selección inválida"); await OnGetAsync(); return Page(); }
-        await _clubsApi.ScheduleOneAsync(club, book, Input.Chapter, DateOnly.FromDateTime(Input.Date));
-        Saved = true;
-        await OnGetAsync();
-        return Page();
+        // Validaciones básicas
+        if (!Guid.TryParse(Input.ClubId, out var club))
+            ModelState.AddModelError(string.Empty, "Seleccione un club válido.");
+        if (!Guid.TryParse(Input.BookId, out var book))
+            ModelState.AddModelError(string.Empty, "Seleccione un libro válido.");
+        if (Input.Chapter <= 0)
+            ModelState.AddModelError(string.Empty, "El capítulo debe ser mayor que 0.");
+
+        if (!ModelState.IsValid)
+        {
+            await OnGetAsync();
+            return Page();
+        }
+
+        var (ok, error) = await _clubsApi.ScheduleOneAsync(
+            club, book, Input.Chapter, DateOnly.FromDateTime(Input.Date));
+
+        if (!ok)
+        {
+            ModelState.AddModelError(string.Empty, error ?? "No se pudo programar el capítulo.");
+            await OnGetAsync();
+            return Page();
+        }
+
+        //  Redirige a la Sala de lectura con los parámetros correctos
+        return RedirectToPage("/Read/Index", new { clubId = club, bookId = book, chapter = Input.Chapter });
     }
 
     public class ScheduleInput
@@ -39,5 +64,5 @@ public class ScheduleModel : PageModel
         public int Chapter { get; set; } = 1;
         public DateTime Date { get; set; } = DateTime.Today;
     }
-
 }
+

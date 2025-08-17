@@ -1,24 +1,26 @@
 ﻿using LectoTribu.Web.ViewModels;
-using LectoTribu.Web.Services;
 
-namespace LectoTribu.Web.Services;
-
-
-public record ClubItem(Guid Id, string Name, string? Description);
-
-public interface IClubsApi
+namespace LectoTribu.Web.Services
 {
-    // CRUD básico
-    Task<List<ClubItem>> GetAllAsync();
-    Task UpdateAsync(Guid id, string name, string? description);
-    Task DeleteAsync(Guid id);
+    public record ClubItem(Guid Id, string Name, string? Description);
 
-    // Acciones
-    Task<Guid> CreateClubAsync(string name, Guid ownerId, string? description);
-    Task ScheduleOneAsync(Guid clubId, Guid bookId, int chapter, DateOnly date);
-    Task CommentAsync(Guid clubId, Guid bookId, int chapter, Guid userId, string content);
-    Task<List<CommentVm>> GetCommentsAsync(Guid clubId, Guid bookId, int chapter);
+    public interface IClubsApi
+    {
+        // CRUD básico
+        Task<List<ClubItem>> GetAllAsync();
+        Task<Guid> CreateClubAsync(string name, Guid ownerId, string? description);
+        Task UpdateAsync(Guid id, string name, string? description);
+        Task DeleteAsync(Guid id);
+
+        // Acciones
+        // ⬇️ Devolvemos (Ok, Error) para no romper la UI con excepción cuando la API responde 400/404
+        Task<(bool Ok, string? Error)> ScheduleOneAsync(Guid clubId, Guid bookId, int chapter, DateOnly date);
+
+        Task CommentAsync(Guid clubId, Guid bookId, int chapter, Guid userId, string content);
+        Task<List<CommentVm>> GetCommentsAsync(Guid clubId, Guid bookId, int chapter);
+    }
 }
+
 
 
 

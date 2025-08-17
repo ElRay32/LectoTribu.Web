@@ -6,76 +6,102 @@
 
 <div class="d-flex align-items-center justify-content-between mb-3">
     <div>
-        <h1 class="h3 mb-0">@Model.HeaderTitle</h1>
-        <small class="text-muted">Club: @Model.ClubId • Libro: @Model.BookId • Capítulo: @Model.Chapter</small>
+        <h1 class="h3 mb-0">@Model.ChapterTitle</h1>
+        <small class="text-muted">
+            Club: @Model.ClubName • Libro: @Model.BookTitle • Capítulo: @Model.Chapter
+        </small>
     </div>
     <div>
-        <a class="btn btn-outline-primary" asp-page="/Clubs/Schedule">Programar</a>
+        <a class="btn btn-outline-primary"
+           asp-page="/Clubs/Schedule"
+           asp-route-clubId="@Model.ClubId"
+           asp-route-bookId="@Model.BookId"
+           asp-route-chapter="@Model.Chapter">
+            Programar
+        </a>
     </div>
 </div>
 
-<div class="reading-shell">
-    <!-- Lado de lectura -->
-    <section>
-        <div class="card shadow-sm reader-card">
+<div class="row g-4">
+    <!-- Columna izquierda: comentarios -->
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-semibold">Comentarios</div>
             <div class="card-body">
-                <h2 class="h5">@Model.ChapterTitle</h2>
-                <p>
-                    @Model.ChapterText
-                </p>
-                <p>
-                    @Model.ChapterText
-                </p>
-                <p>
-                    @Model.ChapterText
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comentarios -->
-    <aside class="sticky-col">
-        <div class="card shadow-sm mb-3">
-            <div class="card-header bg-white fw-semibold">Comentarios (@Model.Comments.Count)</div>
-            <div class="list-group list-group-flush">
-                @if (Model.Comments.Count == 0)
+                @if (Model.Comments?.Count > 0)
                 {
-                    <div class="p-3 text-muted">Aún no hay comentarios. ¡Sé el primero!</div>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var c in Model.Comments)
+                        {
+                            <li class="list-group-item px-0">
+                                <div class="d-flex justify-content-between">
+                                    <strong>@c.UserName</strong>
+                                    <small class="text-muted">@c.CreatedAtUtc.ToLocalTime()</small>
+                                </div>
+                                <div>@c.Content</div>
+                            </li>
+                        }
+                    </ul>
                 }
                 else
                 {
-                    @foreach (var c in Model.Comments)
-                    {
-                        <div class="list-group-item">
-                            <div class="d-flex justify-content-between mb-1">
-                                <strong>@c.UserId.ToString().Substring(0, 8)</strong>
-                                <small class="text-muted">@c.CreatedAtUtc.ToLocalTime().ToString("g")</small>
-                            </div>
-                            <div class="comment-item">@c.Content</div>
-                        </div>
-                    }
+                    <div class="text-muted">Aún no hay comentarios para este capítulo.</div>
                 }
             </div>
         </div>
+    </div>
 
+    <!-- Columna derecha: nuevo comentario -->
+    <aside class="col-lg-4">
         <div class="card shadow-sm">
-            <div class="card-header bg-white fw-semibold">Añadir comentario</div>
+            <div class="card-header bg-white fw-semibold">Nuevo comentario</div>
             <div class="card-body">
-                <form method="post">
-                    <input type="hidden" asp-for="Input.ClubId" />
-                    <input type="hidden" asp-for="Input.BookId" />
-                    <input type="hidden" asp-for="Input.Chapter" />
-                    <div class="mb-2">
-                        <label class="form-label">Tu usuario (GUID)</label>
-                        <input class="form-control" asp-for="Input.UserId" />
+                <form method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Club</label>
+                        <select class="form-select" asp-for="Input.SelectedClubId">
+                            @foreach (var c in Model.Clubs)
+                            {
+                                <option value="@c.Id" selected="@(Model.Input.SelectedClubId == c.Id.ToString() ? "selected" : null)">
+                                    @c.Name
+                                </option>
+                            }
+                        </select>
                     </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Escribe tu comentario..." asp-for="Input.Content"></textarea>
-                        <label for="Input_Content">Escribe tu comentario…</label>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Libro</label>
+                        <select class="form-select" asp-for="Input.SelectedBookId">
+                            @foreach (var b in Model.Books)
+                            {
+                                <option value="@b.Id" selected="@(Model.Input.SelectedBookId == b.Id.ToString() ? "selected" : null)">
+                                    @b.Title
+                                </option>
+                            }
+                        </select>
                     </div>
-                    <button class="btn btn-primary w-100" type="submit">Publicar</button>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Capítulo</label>
+                        <input class="form-control" asp-for="Input.Chapter" type="number" min="1" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Tu nombre</label>
+                        <input class="form-control" asp-for="Input.UserName" placeholder="Ej: Juan Pérez" />
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Comentario</label>
+                        <textarea class="form-control" asp-for="Input.Content" rows="4" placeholder="Escribe tu comentario..."></textarea>
+                    </div>
+
+                    <div class="col-12 d-grid">
+                        <button class="btn btn-primary" type="submit">Publicar</button>
+                    </div>
                 </form>
             </div>
         </div>
     </aside>
 </div>
+
